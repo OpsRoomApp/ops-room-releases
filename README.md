@@ -62,7 +62,7 @@ Default announcements are stored inside the installed OPS ROOM folder:
 
 Airline-specific announcement packs can be added separately. If a selected airline pack is missing, OPS ROOM falls back to the default announcement pack and shows a friendly Announcer notice.
 
-For announcement packs, support, and community updates, join the OPS ROOM Discord:
+For announcement packs join the Announcements Discord:
 
     https://discord.com/invite/ZqZSSfeW9W
 
