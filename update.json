@@ -1,0 +1,9 @@
+{
+  "latest_version": "0.22.0",
+  "minimum_supported_version": "0.21.0",
+  "mandatory": false,
+  "release_notes_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/tag/v0.22.0",
+  "download_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.22.0/OPS_ROOM_v0_22_0_Windows_x64.zip",
+  "sha256": "a5448c67f5e0c15627cb9f3294f0e2d0d29c3f83466d1514762c18ccb45a74f7",
+  "message": "OPS ROOM v0.22.0 is available with updater support, log rotation, OBS Tools layout fixes and packaging cleanup."
+}

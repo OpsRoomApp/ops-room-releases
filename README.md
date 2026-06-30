@@ -68,7 +68,7 @@ OPS ROOM\Announcements\Default\
 
 Airline-specific announcement packs can be added separately. If a selected airline pack is missing, OPS ROOM falls back to the default announcement pack and shows a friendly Announcer notice.
 
-For support, bug reports, announcement packs, and community updates, join the OPS ROOM Discord:
+For announcement packs join Announcements Discord:
 
 https://discord.com/invite/ZqZSSfeW9W
 
