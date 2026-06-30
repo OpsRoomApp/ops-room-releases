@@ -10,7 +10,7 @@ Source code is not published here.
 
 ## Downloads
 
-Public OPS ROOM builds are published from the **Releases** section of this repository.
+Public OPS ROOM builds are published from the Releases section of this repository.
 
 Each release may include:
 
@@ -19,7 +19,32 @@ Each release may include:
 - Release notes
 - Update metadata used by the app updater
 
-Download the latest release from the **Releases** tab.
+Download the latest release from the Releases tab.
+
+## Windows SmartScreen Notice
+
+OPS ROOM beta builds are currently unsigned.
+
+Because of this, Windows Defender SmartScreen may show a warning such as:
+
+    Windows protected your PC
+    App: OPS ROOM.exe
+    Publisher: Unknown publisher
+
+This warning can appear for new or unsigned Windows applications, especially when they are distributed as ZIP files outside the Microsoft Store.
+
+Only download OPS ROOM from the official GitHub release repository:
+
+    https://github.com/OpsRoomApp/ops-room-releases
+
+Before running a release, you can verify the downloaded ZIP against the published SHA256 checksum file included with each GitHub release.
+
+If you trust the official OPS ROOM release package, click:
+
+    More info
+    Run anyway
+
+Code signing is planned for a future public release so Windows can show a verified publisher instead of Unknown publisher.
 
 ## Updates
 
@@ -52,7 +77,7 @@ LAN device address:
 
     http://YOUR-PC-IP:8080
 
-Port `8083` is not OPS ROOM. Port `8083` belongs to Fenix.
+Port 8083 is not OPS ROOM. Port 8083 belongs to Fenix.
 
 ## Announcement Packs
 
@@ -62,7 +87,7 @@ Default announcements are stored inside the installed OPS ROOM folder:
 
 Airline-specific announcement packs can be added separately. If a selected airline pack is missing, OPS ROOM falls back to the default announcement pack and shows a friendly Announcer notice.
 
-For announcement packs join the Announcements Discord:
+For announcement join the Announcement Packs Discord:
 
     https://discord.com/invite/ZqZSSfeW9W
 
