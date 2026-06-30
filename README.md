@@ -19,26 +19,26 @@ Each release may include:
 - Release notes
 - Update metadata used by the app updater
 
-Download the latest release from:
-
-https://github.com/OpsRoomApp/ops-room-releases/releases
+Download the latest release from the **Releases** tab.
 
 ## Updates
 
 OPS ROOM can use this repository to check for available updates.
 
-When a newer version is available, OPS ROOM shows an update prompt. Updates are user-confirmed, not silent. The app downloads the approved release package, verifies its checksum, closes OPS ROOM, runs the updater, replaces the application files, and restarts OPS ROOM.
+When a newer version is available, OPS ROOM shows an update prompt. Updates are user-confirmed, not silent.
+
+The app downloads the approved release package, verifies its checksum, closes OPS ROOM, runs the updater, replaces the application files, and restarts OPS ROOM.
 
 User data is stored separately in Windows AppData and is not part of the public release ZIP.
 
 Typical preserved user data includes:
 
-- settings
-- secrets/API keys
+- Settings
+- Secrets and API keys
 - SimBrief data
-- logbook database
-- dispatch selections
-- local diagnostics and logs
+- Logbook database
+- Dispatch selections
+- Local diagnostics and logs
 
 ## Browser Access
 
@@ -46,15 +46,11 @@ OPS ROOM runs locally on the PC and serves its browser interface over the LAN.
 
 Local address:
 
-```text
-http://localhost:8080
-```
+    http://localhost:8080
 
 LAN device address:
 
-```text
-http://YOUR-PC-IP:8080
-```
+    http://YOUR-PC-IP:8080
 
 Port `8083` is not OPS ROOM. Port `8083` belongs to Fenix.
 
@@ -62,15 +58,13 @@ Port `8083` is not OPS ROOM. Port `8083` belongs to Fenix.
 
 Default announcements are stored inside the installed OPS ROOM folder:
 
-```text
-OPS ROOM\Announcements\Default\
-```
+    OPS ROOM\Announcements\Default\
 
 Airline-specific announcement packs can be added separately. If a selected airline pack is missing, OPS ROOM falls back to the default announcement pack and shows a friendly Announcer notice.
 
-For announcement packs join Announcements Discord:
+For announcement packs, support, and community updates, join the OPS ROOM Discord:
 
-https://discord.com/invite/ZqZSSfeW9W
+    https://discord.com/invite/ZqZSSfeW9W
 
 ## PMDG Note
 
