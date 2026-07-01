@@ -1,66 +1,87 @@
-# OPS ROOM v0.22.0
+# OPS ROOM v0.23.0 Public Beta RC1
 
-OPS ROOM v0.22.0 is a release-candidate build focused on updater support, storage safety, OBS Tools layout improvements, and public packaging cleanup.
+Release candidate for public beta testing.
+
+Do not publish this build to the normal GitHub updater channel until it has been smoke-tested locally and the final compiled Windows ZIP URL plus SHA256 checksum are ready.
+
+## Public beta position
+
+OPS ROOM is free during public beta.
+
+Support via **Buy me a coffee** is optional and does not unlock extra features during beta:
+
+```text
+https://buymeacoffee.com/exzonom
+```
+
+Some features, licensing, pricing, availability, and packaging may change before the final v1.0 release.
 
 ## Highlights
 
-- Added GitHub-based updater support
-- Added user-confirmed update prompt
-- Added separate OPS ROOM Updater executable for safer replacement
-- Added SHA256 verification before update install
-- Added log rotation to prevent oversized OPS ROOM logs
-- Added local storage cleanup actions for logs and cache
-- Fixed OBS Tools / Overlay Studio layout clipping
-- Improved public README and release notes
-- Preserved validated GSX automation flow from v0.21.0 RC
+- Floating **MSFS 2024 Camera Bridge** panel on the VATSIM FIDS page.
+- Camera modes: Tail Follow, Left Spotter, Right Spotter, Front 3/4, Tower Static, and Orbit.
+- Camera controls: distance, height, side offset, pitch, orbit angle, smoothing, reset view, recenter, start bridge, and release camera.
+- Scratchpad TYPE / PEN / ERASER modes, with TYPE as the default.
+- App-wide **Buy me a coffee** link near the Report Bug area.
+- Public beta README, release notes, listing draft, and smoke-test checklist.
+- GSX automation intentionally untouched in this release-candidate pass.
 
-## Validated GSX Automation
+## RC1 changes
 
-The existing validated GSX automation flow was not intentionally changed in this release.
+### Camera Bridge
 
-Validated status:
+- Fixed the release path so **Stop Watching / Release Camera** attempts to return the camera to the user aircraft before releasing camera ownership.
+- Added a reacquire retry path after MSFS Addons camera owner loss or disable/enable.
+- Hardened Start Bridge path detection for source, PyInstaller, one-folder, and `_internal` layouts.
+- Kept the camera-control surface on the FIDS page rather than burying it in System.
+- Preserved the previous target-parser fix so metadata keys such as `updated_at` are not treated as aircraft targets.
 
-- Fenix: working perfectly with HAR-matched Airbus/Fenix GSX loading flow
-- FSLabs: working with the same flow
-- iniBuilds: catering, refuelling, boarding/loading working
-- PMDG 777W/PMDG: working correctly after importing SimBrief/OFP inside PMDG EFB first
-- iFly: working, pushback tug attaches automatically
-- Aerosoft: not retested for this release, expected compatible, manual door opening/closing may be required
+### Scratchpad
 
-## Important PMDG Note
+- TYPE mode is the default.
+- Canvas pointer events are disabled in TYPE mode so text fields can receive focus and keyboard input.
+- PEN and ERASER modes keep the canvas interactive for handwriting.
+- The fix is intended to work on desktop browsers and touch/tablet use.
 
-PMDG users must import the SimBrief OFP inside the PMDG EFB before starting OPS ROOM GSX automation.
+### Public beta polish
 
-If the OFP is not imported in the PMDG EFB first, GSX can target incorrect or near-full fuel.
-
-## Updater Notes
-
-OPS ROOM v0.22.0 includes the first GitHub updater flow.
-
-The updater checks the public OPS ROOM release manifest, compares the installed version, prompts the user, downloads the approved release ZIP, verifies the SHA256 checksum, stages the update, closes OPS ROOM, replaces the app files, and restarts the app.
-
-Updates are user-confirmed, not silent.
-
-## Browser Access
-
-OPS ROOM uses port 8080:
+- Added **Buy me a coffee** link:
 
 ```text
-http://localhost:8080
+https://buymeacoffee.com/exzonom
 ```
 
-For LAN devices:
+- Added public beta wording: free during beta, optional support, future pricing/licensing may change.
+- Added release-candidate smoke-test checklist.
+- Updated repository-facing documentation.
 
-```text
-http://YOUR-PC-IP:8080
-```
+## Known limitations
 
-Port 8083 is not OPS ROOM. Port 8083 belongs to Fenix.
+- The MSFS 2024 Camera Bridge is still alpha-level and requires real tester validation.
+- The Windows Camera Bridge executable must be built on Windows with Visual Studio and the MSFS/SimConnect SDK.
+- The compiled public beta Windows ZIP must be smoke-tested before Flightsim.to upload.
+- MSFS 2020 native camera follow remains intentionally disabled.
+- GSX behaviour can vary depending on aircraft, scenery, door state, payload manager, and GSX menu timing.
+- PMDG users must import the SimBrief OFP in the PMDG EFB before using OPS ROOM GSX automation.
+- Windows antivirus products may flag unsigned beta builds.
 
-## Known Limitations
+## Smoke-test checklist before public upload
 
-- Full silent background update is not enabled
-- Updates require user confirmation
-- The app is not code-signed yet, so some antivirus tools may still warn on the package
-- Aerosoft aircraft may require manual door opening/closing
-- Source code is not included in public releases
+1. Start OPS ROOM and open the browser UI.
+2. Open VATSIM FIDS and confirm the floating Camera Bridge panel appears.
+3. Start the Camera Bridge from the FIDS panel.
+4. Select an aircraft and confirm MSFS 2024 camera follows the correct target.
+5. Confirm the Camera Bridge log shows an aircraft callsign or SimObject ID, not `updated_at`.
+6. Press Stop Watching / Release Camera and confirm the view returns to the user aircraft.
+7. Select another aircraft without restarting the bridge.
+8. Disable/Enable the MSFS Addons camera panel and confirm recovery.
+9. Test Scratchpad typing, PEN, and ERASER.
+10. Confirm Buy me a coffee opens `https://buymeacoffee.com/exzonom`.
+11. Confirm GSX flows are unchanged.
+12. Confirm the final Windows release ZIP SHA256 matches the published checksum.
+
+## Package notes
+
+This RC1 project package contains source/project files for the release-candidate line.
+
+The final public beta upload should use the compiled Windows release ZIP generated on the Windows/MSFS dev machine, not the project/source ZIP.
