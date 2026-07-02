@@ -1,9 +1,8 @@
 {
-  "latest_version": "0.23.0-public-beta-rc1",
-  "minimum_supported_version": "0.21.0",
-  "mandatory": false,
-  "release_notes_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/tag/v0.23.0-public-beta-rc1",
-  "download_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.23.0-public-beta-rc1/OPS_ROOM_v0_23_0_Public_Beta_RC1_Windows_x64.zip",
-  "sha256": "dddfa4d5041d4414f3de40c218b831739c34e877cf04c0be2c35c7f96d2cc044",
-  "message": "OPS ROOM v0.23.0 Public Beta RC1 is available. This is a free public beta for testing and feedback."
+  "version": "0.23.6",
+  "channel": "private-validation",
+  "url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.23.6-test/OPS_ROOM_v0_23_6_Private_Validation_Windows_x64.zip",
+  "sha256": "3E468A0B23B0C9704A5CAB6C099056C77F48F892FA95711603CCEADA31A02D48",
+  "notes": "Private validation build for OPS ROOM v0.23.6.",
+  "mandatory": false
 }
