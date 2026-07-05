@@ -1,12 +1,13 @@
 {
-  "latest_version": "0.23.6",
-  "version": "0.23.6",
-  "minimum_supported_version": "0.21.0",
+  "latest_version": "0.24.0",
+  "version": "0.24.0",
+  "minimum_supported_version": "0.22.0",
   "mandatory": false,
-  "release_notes_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/tag/v0.23.6-test",
-  "download_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.23.6-test/OPS_ROOM_v0_23_6_Private_Validation_Windows_x64.zip",
-  "url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.23.6-test/OPS_ROOM_v0_23_6_Private_Validation_Windows_x64.zip",
-  "sha256": "3E468A0B23B0C9704A5CAB6C099056C77F48F892FA95711603CCEADA31A02D48",
-  "message": "OPS ROOM v0.23.6 private validation build.",
-  "notes": "OPS ROOM v0.23.6 private validation build."
+  "release_notes_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/tag/v0.24.0",
+  "download_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.24.0/OPS_ROOM_v0_24_0_Public_Beta_Windows_x64.zip",
+  "url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.24.0/OPS_ROOM_v0_24_0_Public_Beta_Windows_x64.zip",
+  "sha256": "92180E061B404D068C04EA5B146B83E90E268E44E2FA386083830954DF18EA13",
+  "message": "OPS ROOM v0.24.0 Public Beta is available. Includes RAAS cleanup, FT/M unit selection, Camera Bridge recovery, PIREP/logbook polish, iPad/EFB fixes, update reliability and public beta hardening.",
+  "notes": "OPS ROOM v0.24.0 Public Beta: RAAS cleanup with selectable FT/M callouts, improved camera/release flow, PIREP/logbook rendering updates, iPad/EFB usability fixes, update reliability and public beta polish."
 }
+
