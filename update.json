@@ -1,13 +1,12 @@
 {
-  "latest_version": "0.24.0",
-  "version": "0.24.0",
+  "latest_version": "0.24.1",
+  "version": "0.24.1",
   "minimum_supported_version": "0.22.0",
   "mandatory": false,
-  "release_notes_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/tag/v0.24.0",
-  "download_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.24.0/OPS_ROOM_v0_24_0_Public_Beta_Windows_x64.zip",
-  "url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.24.0/OPS_ROOM_v0_24_0_Public_Beta_Windows_x64.zip",
-  "sha256": "92180E061B404D068C04EA5B146B83E90E268E44E2FA386083830954DF18EA13",
-  "message": "OPS ROOM v0.24.0 Public Beta is available. Includes RAAS cleanup, FT/M unit selection, Camera Bridge recovery, PIREP/logbook polish, iPad/EFB fixes, update reliability and public beta hardening.",
-  "notes": "OPS ROOM v0.24.0 Public Beta: RAAS cleanup with selectable FT/M callouts, improved camera/release flow, PIREP/logbook rendering updates, iPad/EFB usability fixes, update reliability and public beta polish."
+  "release_notes_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/tag/v0.24.1",
+  "download_url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.24.1/OPS_ROOM_v0_24_1_Public_Beta_Windows_x64.zip",
+  "url": "https://github.com/OpsRoomApp/ops-room-releases/releases/download/v0.24.1/OPS_ROOM_v0_24_1_Public_Beta_Windows_x64.zip",
+  "sha256": "88C9942AF1FF3D9B9DCF7F0D06943FB7A755C54DCABC878FED31DBEAFC1DCF30",
+  "message": "OPS ROOM v0.24.1 Public Beta hotfix is available. Fixes automatic updater installation and adds visible updater progress/status.",
+  "notes": "OPS ROOM v0.24.1 Public Beta hotfix: updater handoff fix, visible installer status window, safer .part downloads and 0 KB download rejection. Includes all v0.24.0 RAAS/public beta changes."
 }
-
